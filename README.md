@@ -17,20 +17,17 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./output_images/writeup_images/chessboard_calibration.jpg "Undistorted"
-[image2]: ./output_images/writeup_images/undistortion.jpg "Road Transformed"
-[image3]: ./output_images/writeup_images/components_combined.jpg "Binary Example"
-[image4]: ./output_images/writeup_images/combined_transform.jpg "Warp Example"
-[image5]: ./output_images/writeup_images/perspective_transform.jpg "Fit Visual"
-[image6]: ./output_images/writeup_images/check_perspective_transform.jpg "Output"
-[image7]: ./output_images/writeup_images/histogram.png "Warp Example"
-[image8]: ./output_images/writeup_images/lane_lines.png "Fit Visual"
-[image9]: ./output_images/writeup_images/projected_back.png "Output"
-[image10]: ./output_images/writeup_images/image_pipeline.jpg "Output2"
+[image1]: ./output_images/writeup_images/chessboard_calibration.jpg 
+[image2]: ./output_images/writeup_images/undistortion.jpg 
+[image3]: ./output_images/writeup_images/components_combined.jpg 
+[image4]: ./output_images/writeup_images/combined_transform.jpg 
+[image5]: ./output_images/writeup_images/perspective_transform.jpg 
+[image6]: ./output_images/writeup_images/check_perspective_transform.jpg 
+[image7]: ./output_images/writeup_images/histogram.png 
+[image8]: ./output_images/writeup_images/lane_lines.png 
+[image9]: ./output_images/writeup_images/projected_back.png 
+[image10]: ./output_images/writeup_images/image_pipeline.jpg 
 
-
-
-[video1]: ./project_video.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
