@@ -26,7 +26,7 @@ The goals / steps of this project are the following:
 [image7]: ./output_images/writeup_images/histogram.png "Warp Example"
 [image8]: ./output_images/writeup_images/lane_lines.png "Fit Visual"
 [image9]: ./output_images/writeup_images/projected_back.png "Output"
-[image9]: ./output_images/writeup_images/image_pipeline.jpg "Output2"
+[image10]: ./output_images/writeup_images/image_pipeline.jpg "Output2"
 
 
 
