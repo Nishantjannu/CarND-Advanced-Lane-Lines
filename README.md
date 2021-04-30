@@ -60,11 +60,11 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 ![Image Undistortion][image2]
 
-The camera matrix (mtx) and undistortion co-efficients (dist) are saved in the "wide_dist_pickle.p" file inside the "camera_cal" folder for later use.
+The camera matrix (mtx) and undistortion co-efficients (dist) are saved in the [wide_dist_pickle.p](./camera_cal/wide_dist_pickle.p) file for later use.
 
 ### Pipeline (single images)
 
-The pipeline for single images is contained in the IPython notebook named "Image_Pipeline.ipynb". Please run this notebook, and you will see all the steps involved. Below is a plot of all the steps performed. There are described step by step in the section ahead.
+The pipeline for single images is contained in the IPython notebook [Image_Pipeline.ipynb](./Image_Pipeline.ipynb). Please run this notebook, and you will see all the steps involved. Below is a plot of all the steps performed. There are described step by step in the section ahead.
 
 ![Image Pipeline][image10]
 
@@ -77,7 +77,7 @@ I defined a function - cal_undistort(image,mtx,dist) which outputs an undistorte
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-The code for this was developed in the "Gradient_and_Colour_Thresholding.ipynb" IPython notebook and the same functions have also been defined in the image pipeline notebook "Image_Pipeline.ipynb". 
+The code for this was developed in the [Gradient_and_Colour_Thresholding.ipynb](./Gradient_and_Colour_Thresholding.ipynb) IPython notebook and the same functions have also been defined in the image pipeline notebook [Image_Pipeline.ipynb](./Image_Pipeline.ipynb). 
 
 There are a total of 7 functions defined: 4 gradient and 3 colour transforms. Out of these, 4 combinations have been made and put in an expression for the combined transform. Each of the 4 combinations add a particular element to the combined transform:
 1. gradx & grady: provide crucial curve information, especially towards the end of visible road
@@ -93,11 +93,11 @@ Below is a depiction of the individual contribution of these components and thei
 
 ![Combined Threshold Binary Transform][image4]
 
-A combining function "threshold_combined" has been defined to carry out this transformation in the "Image_Pipeline.ipynb" file.
+A combining function "threshold_combined" has been defined to carry out this transformation in the [Image_Pipeline.ipynb](./Image_Pipeline.ipynb) file.
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-The perspective transform has been developed in the second part of the IPython notebook "Camera_Cal_and_Perspective_Transform.ipynb". 
+The perspective transform has been developed in the second part of the IPython notebook [Camera_Cal_and_Perspective_Transform.ipynb](./Camera_Cal_and_Perspective_Transform.ipynb).
 
 One of the test images (straight_lines1.jpg) was used to identify a trapezium on the road (source points) and transformed into a rectangle (destination points) in the warped image. These points were roughly selected by eye-balling them.
 
@@ -105,17 +105,17 @@ The result on the selected image is shown below:
 
 ![Perspective Transform][image5]
   
-The Transform Matrix "M" and the Inverse Transform Matrix "Minv" have been saved in the file "persp_pickle.p" for usage in image/video pipeline.
+The Transform Matrix "M" and the Inverse Transform Matrix "Minv" have been saved in the file [persp_pickle.p](./persp_pickle.p) for usage in image/video pipeline.
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image (test3.jpg) and its warped counterpart to verify that the lines appear parallel in the warped image.
 
 ![Verifying_Perspective_Transform][image6]
 
-In the "Image_Pipeline.ipynb" file, I have defined a "persp_transform" function that takes in the combined threshold binary image along with "M" and returns the warped image. The function uses cv2.warpPerspective() to make the transformation.
+In the [Image_Pipeline.ipynb](./Image_Pipeline.ipynb) file, I have defined a "persp_transform" function that takes in the combined threshold binary image along with "M" and returns the warped image. The function uses cv2.warpPerspective() to make the transformation.
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-For this, please refer to the "Image_Pipeline.ipynb" file again.
+For this, please refer to the [Image_Pipeline.ipynb](./Image_Pipeline.ipynb) file again.
 
 The histogram peaks and sliding windows method has been used to identify lane-line pixels. 
 
@@ -145,7 +145,7 @@ I implemented this step by calling the draw_lanes() function defined in the less
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-##### There are 3 video pipelines I developed. Please refer to the "Project Video.ipynb" for a well-explained code.
+##### There are 3 video pipelines I developed. Please refer to the [Project Video.ipynb](./Project Video.ipynb) for a well-explained code.
 
 Below are the links to the 3 versions:
 
